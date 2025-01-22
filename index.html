@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walentynka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <div class="content">
+        <div class="koperta">
+          <div class="zaslona"></div>
+          <div class="kop1"><div class="togf">Do Patrycji</div></div>
+          <div class="kop2"></div>
+        </div>
+        
+
+      
+
+
+        <button class="open" onclick="hideElements()">otwórz</button>
+      </div>
+
+
+      <div class="kartka">
+        <div class="kartka__text">
+          <h1 class="kartka__h">Do: Patrycji</h1>
+          <h2 class="kartka__h">Od: Franka</h2>
+          <h3 class="kartka__h">Czy zostaniesz moją walentynką?</h3>
+        </div> 
+        
+        
+
+      </div>
+      <div class="ansewr">
+      <form action="https://formspree.io/f/xqaezvej" method="POST">
+
+
+          <div class="part1">
+            <label>
+                Imię i nazwisko: <br>
+              <input type="Name" name="name">
+              </label>
+              <label>
+                <br>Odpowiedź: <br>
+              <input type="radio" name="answer" value="Tak">Tak <br>
+              
+              </label>
+        
+            
+            
+            <p>(Jeśli chcesz zaznaczyć nie poprostu zamknij stronę i żałuj)</p>
+          </div>
+
+        
+
+          <div class="part2">
+            <h1>Jeśli tak to:</h1>
+            <label>
+                U kogo?: <br>
+              <input type="radio" name="U kogo" value="U Franka">U Franka 
+              <input type="radio" name="U kogo" value="U Patrycji">U Patrycji
+              <input type="radio" name="U kogo" value="Gdzieś Jedziemy">Gdzieś Jedziemy <br><p style="text-align: right; margin: 0;">(do uzgodnienia na pv)</p>
+              <br> <br>
+              </label>
+              <label for="">
+              Kiedy?: <br>
+              <input type="date" name="date"> <br> <br>
+              </label>
+              <label for="">
+              Co będziemy robić?: <br>
+              <input type="text" name="text">
+              <br>
+              <p style="font-size: 8px;">(wpisz kilka propozycji)</p>
+              </label>
+              <label for="">
+                Co jemy?: <br> <br>
+                <input type="checkbox" name="eat" value="sushi"><img src="sushi.png" alt="sushi" style="width: 128px; height: 128px;">
+                <p style="text-align: left; text-align: center; font-size: 10px;">(Ty robisz)</p>
+                <input type="checkbox" name="eat" value="pizza"><img src="pizza.png" alt="pizza" style="width: 128px; height: 128px;"> <br>
+                 <br>
+                <input type="checkbox" name="eat" value="Makaron"><img src="makaron.png" alt="Makarn" style="width: 128px; height: 128px;"> <br>
+                Inna Propozycja?: <br> <input type="text">
+                </label>
+
+          </div>
+          <button type="submit" class="submit">Wyślij</button>
+
+        </form>
+        <button onclick="part1()" class="open2">Dalej</button>
+      </div>  
+           
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+body
+{
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 5%;
+  
+}
+
+.content
+{
+  
+  min-height: 500px;
+}
+
+
+.koperta
+{
+  background-color: blanchedalmond;
+  position: relative;
+  width: 400px;
+  height: 400px;
+
+}
+.zaslona
+{
+  background-color: blanchedalmond;
+  width: 400px;
+  height: 205px;
+  position: absolute;
+  z-index: 15;
+}
+
+.kop1
+{
+  position: absolute;
+ 
+  width: 300px;
+  height: 200px;
+  background-color: #ff0000;
+  left: 50px;
+  bottom: 0px;
+  z-index: 5;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  border-radius: 10px;
+}
+
+.togf
+{
+  background-color: bisque;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 20px;
+  margin-bottom: 10px;
+  border: black 2px dotted;
+  font: 300 16px georgia, Helvetica, sans-serif;
+  
+}
+
+.kop2
+{
+  position: absolute;
+ 
+  width: 210px;
+  height: 210px;
+  background-color: #ff0000;
+  left: 50%;
+ 
+  top: 50%;
+  rotate: 45deg;
+  border: black 1px solid;
+  z-index: 10;
+  translate: -50% -50%;
+  border-radius: 10px;
+}
+
+.open
+{
+  background-color: #ff0000;
+  color: blanchedalmond;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  left: 50%;
+  
+  translate:  -50%;
+  position: relative;
+}
+
+.kartka
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: center;
+  padding: 10%;
+  background-color: aliceblue;
+  width: 75%;
+  height: 40%;
+  display: none;
+  background-image: url(ser.webp);
+  background-repeat: no-repeat ; 
+  background-position: center;
+  background-size: 90%;
+  border-radius: 20px;
+  box-shadow: #3d3d3d 10px 10px 10px;
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kartka__text
+{
+  margin-top: 28%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.kartka__h
+{
+  font-size: 250%;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.ansewr
+{
+  display: none;
+  margin-top: 5%;
+  text-align: center;
+  padding: 10%;
+  width: 75%;
+ 
+ 
+}
+
+.open2
+{
+  background-color: #ff0000;
+  color: blanchedalmond;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit
+{
+  background-color: #ff0000;
+  color: blanchedalmond;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.part2
+{
+  display: none;
+  border: #000000 2px dotted;
+  padding: 10%;
+  width: 65%;
+  height: 40%;
+  
+}
+
+
+
+
+@media screen and (max-width: 700px)
+ {
+
+  .kartka__text
+  {
+    margin-top: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+
+  .kartka__h
+  {
+    font-size: 140%;
+    
+  }
+
+}
